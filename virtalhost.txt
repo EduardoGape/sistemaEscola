@@ -1,7 +1,12 @@
 <VirtualHost *:80>
-    ServerName aprendendoLaravel
-    DocumentRoot "<DIRETÓRIO XAMPP>\htdocs\aprendendo-laravel\public"
-    <Directory "<DIRETÓRIO XAMPP>\htdocs\aprendendo-laravel\public">
-      AllowOverride all
+    ServerName seu-dominio.test
+    DocumentRoot "C:/Users/Aluno CtrlPlay/SIstemaEscola/sistemaEscola/public"
+
+    <Directory "C:/Users/Aluno CtrlPlay/SIstemaEscola/sistemaEscola/public">
+        AllowOverride All
+        Require all granted
     </Directory>
-  </VirtualHost>
+
+    ErrorLog "logs/seu-dominio.test-error.log"
+    CustomLog "logs/seu-dominio.test-access.log" common
+</VirtualHost>
