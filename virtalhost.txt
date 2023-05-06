@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+    ServerName aprendendoLaravel
+    DocumentRoot "<DIRETÓRIO XAMPP>\htdocs\aprendendo-laravel\public"
+    <Directory "<DIRETÓRIO XAMPP>\htdocs\aprendendo-laravel\public">
+      AllowOverride all
+    </Directory>
+  </VirtualHost>
